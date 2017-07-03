@@ -2,7 +2,7 @@
 
 cd /opt/wjhapp/cboard/CBoard
 mvn package && mv target/cboard.war target/ROOT.war
-cp /opt/wjhapp/cboard/CBoard/target/ROOT.war /usr/local/tomcat/apache-tomcat-8.5.16/webapps/
+sudo cp /opt/wjhapp/cboard/CBoard/target/ROOT.war /usr/local/tomcat/apache-tomcat-8.5.16/webapps/
 
 cd /usr/local/tomcat/apache-tomcat-8.5.16
 ./bin/shutdown.sh && ./bin/startup.sh
